@@ -6,16 +6,39 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
+    <div class="nv">
      <!--navigation-->   
      <nav>
         <i class="fa-sharp fa-solid fa-bell"></i>
 
      </nav>
+    </div>
+
+    <div class="flex-container">
+
+    <div class="cal">
+        <button class="entry">New Entry</button>
+        <iframe src="https://calendar.google.com/calendar/embed?src=en.ke%23holiday%40group.v.calendar.google.com&ctz=Africa%2FNairobi" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <button class="view">View Entries</button>
+        <input type="text" placeholder="Search entries...">
+
+    </div>
+
+    <div class = "input">
      <!--content-->
      <form action="/submit" method="post">
         <label for="entry">New Journal Entry:</label><br>
         <textarea id="entry" name="entry" rows="4" cols="50"></textarea><br>
         <input type="submit" value="Submit">
+        <button class ="edit">Edit </button>
+        <button class="delete">Delete</button>
      </form>  
+    </div>
+    
+    <div class = "side">
+
+    </div>
+
+</div>
     </body>
 </html>
